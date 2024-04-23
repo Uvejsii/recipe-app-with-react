@@ -1,14 +1,14 @@
 import './App.css'
-import Header from "./components/Header.jsx";
-import CardList from "./components/CardList.jsx";
+import {Outlet} from "react-router-dom";
+import NavBar from "./components/NavBar.jsx";
 
 function App() {
 
     return (
         <div className="App">
+            <NavBar/>
             <main className="main_container">
-                <Header/>
-                <CardList/>
+                <Outlet/>
             </main>
         </div>
     )

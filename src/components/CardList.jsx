@@ -3,7 +3,7 @@ import Card from "./Card.jsx";
 import mainImage from "../assets/main-img.jpg";
 
 
-const recipes = [
+export const recipes = [
     {
         id: 1,
         name: "Poke Bowls",

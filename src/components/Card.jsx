@@ -1,9 +1,17 @@
 /* eslint-disable */
-// import mainImage from "../assets/main-img.jpg";
+
+import {useNavigate} from "react-router-dom";
 
 const Card = ({recipe}) => {
+
+    const navigate = useNavigate()
+
+    const navigateToRecipePage = () => {
+        navigate(`/recipe/${recipe.id}`)
+    }
+
     return (
-        <div className="card">
+        <div className="card" onClick={navigateToRecipePage}>
             <img src={recipe.image} alt=""/>
             <div className="card-content">
                 <h3>{recipe.name}</h3>
