@@ -283,3 +283,79 @@ nav a {
   justify-content: space-between;
   margin-top: 10px;
 }
+
+@media (max-width: 1000px) {
+  header.main_header {
+    flex-direction: column;
+  }
+
+  .text-container {
+    margin: 0 15px;
+  }
+
+  .header-title, p.header-description {
+    text-align: center;
+  }
+
+  .header-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .main-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 15px;
+  }
+
+  .nutritional-facts-container {
+    /*flex-wrap: wrap;*/
+  }
+
+  .recipe-fact-container {
+    margin: 0 10px;
+  }
+
+  .recipe-info {
+    flex-direction: column-reverse;
+  }
+
+  .cards {
+    margin: 100px 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  .recipe-header {
+    width: 350px;
+  }
+
+  .recipe-header h1 {
+    font-size: 20px;
+    width: 350px;
+  }
+
+  .nutritional-facts-container {
+    width: 350px;
+    flex-wrap: wrap;
+  }
+
+  .recipe-img {
+    width: 350px;
+  }
+
+  .recipe-info-container {
+    width: 350px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .cards {
+    justify-content: center;
+  }
+}

@@ -46,11 +46,11 @@ const recipeHeader = ({nutritionalFacts, name}) => {
             <div className="nutritional-facts-container">
                 {nutritionalFactsArray.map(({Icon, id, amount, category}) => (
                     <RecipeNutritionalFact key={id} fact={{amount, category}}>
-                        <Icon />
+                        <Icon/>
                     </RecipeNutritionalFact>
-                        ))}
-                    </div>
-                    </div>
-                    )
-                }
-                export default recipeHeader;
+                ))}
+            </div>
+        </div>
+    )
+}
+export default recipeHeader;

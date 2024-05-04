@@ -30,7 +30,7 @@ const Header = ({handleSearch}) => {
                     <button onClick={searchClick}>Search</button>
                 </div>
             </div>
-            <div>
+            <div className="main-img-container">
                 <img src={mainImage} alt="cake image" className="main_img"/>
             </div>
         </header>
